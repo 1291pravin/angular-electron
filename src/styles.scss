@@ -1,7 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-
   height: 100%;
+  background-color: #000 !important;
+  color: #ffffff;
+}
+.black {
+  background-color: #000;
+  background-image: none;
+  color: #ffffff;
+}
+.toolbar {
+  box-shadow: none !important;
+}
+.toolbar-header {
+  border-bottom: none !important;
+}
+
+.tab-item {
+  width: 50px;
+}
+.toolbar-footer {
+  background-color: #4a4a4a !important;
+  background-image: none !important;
+}
+.gutter-horizontal, .gutter-vertical {
+ background-color: #000;
+}
+.content {
+  background-color: #000;
+}
+.table-striped tr:nth-child(even), thead {
+  background-color: #000 !important;
+  color:#fff;
+}
+tbody {
+  background-color: #000 !important;
+  color:#fff;
 }

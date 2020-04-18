@@ -1,0 +1,82 @@
+header {
+  background-color: #000;
+  background-image: none;
+}
+header .title {
+  color: #fff;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #870000;
+}
+header button.newwindow {
+  background-color: #0a17d8;
+  background-image: none;
+  color: #fff;
+  border-color: transparent;
+  border-radius: 15px;
+}
+.ibot {
+  background-color: #285328;
+  background-image: none;
+  color: #fff;
+}
+.round {
+  border-radius: 15px;
+}
+.bold {
+  font-weight: bold;
+}
+.black {
+  color: #fff;
+  background-image: none;
+  background-color: #000;
+}
+.pull-right .btn {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.small {
+  color: #d7bf9a;
+  font-size: 12px;
+  display: inline;
+}
+.icon-lock {
+  color: #d7bf9a;
+}
+.inline {
+  margin-left: 10px;
+  display: inline;
+}
+.inline input {
+  position: relative;
+}
+.icon-search {
+  color: #aaa;
+
+  margin-left: -14px;
+}
+
+.icon-infinity {
+  color: #72c844;
+  font-size: 17px;
+}
+
+.white {
+  color: #fff;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.icon-feather {
+  color: #b40d1b;
+  font-size: 17px;
+}
+
+.toolbar {
+  box-shadow: none;
+}

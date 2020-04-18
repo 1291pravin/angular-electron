@@ -90,5 +90,15 @@
   },
   "engines": {
     "node": ">=10.13.0"
+  },
+  "dependencies": {
+    "angular-resizable-element": "3.3.0",
+    "angular-split": "3.0.3",
+    "chart.js": "2.9.3",
+    "chartjs-plugin-annotation": "0.5.7",
+    "ng2-charts": "2.3.0",
+    "resizable": "1.2.1",
+    "split-grid": "1.0.9",
+    "split.js": "1.5.11"
   }
 }
