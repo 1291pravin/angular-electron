@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import Split from "split.js";
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, BaseChartDirective, Label } from 'ng2-charts';
@@ -93,7 +93,42 @@ export class TradetabsComponent implements OnInit {
 
   @ViewChild(BaseChartDirective, { static: true }) chart: BaseChartDirective;
   @ViewChild('myChart', { static: true })  chart1: BaseChartDirective;
+  @ViewChild('model', {static:true}) model : ElementRef;
+  fonts : any = ["Helvetica","Arial", "Times", "Times New Roman", "Verdana", "Tahoma"];
+  selectedFont : string = "Helvetica" ;
+  showColor = false;
+  colors  = ["white","red","yellow", "green", "blue"];
+  selectedColor = "white";
+
+
   constructor() {}
+
+
+  openModal(is_color = false) {
+    if (is_color) {
+      this.showColor = true;
+    } else {
+      this.showColor = false;
+    }
+    this.model.nativeElement.style.display = "block";
+  }
+
+  closeModal() {
+    this.model.nativeElement.style.display = "none";
+    this.showColor  = false;
+  }
+
+
+  changeFont() {
+    if (this.showColor) {
+      document.getElementById("c").style.color = this.selectedColor;
+    } else {
+      document.getElementById("c").style.fontFamily = this.selectedFont;
+    }
+
+    this.closeModal();
+
+  }
 
   ngOnInit(): void {
     setTimeout(() => {

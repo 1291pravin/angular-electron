@@ -1,17 +1,25 @@
 <div class="tab-group">
-  <div class="tab-item">
-    Mosaic
+  <div class="tab-item"  *ngFor="let item of bottomtabs; let key = index" [ngClass]="{active: key == bottomtabs_index}" (click)="changeTab(key)">
+    {{item}}
   </div>
-  <div class="tab-item ">
-    Classic TWS
-  </div>
-  <div class="tab-item">
-    Portfolio View
-  </div>
-  <div class="tab-item active">
-    Markets
-  </div>
-  <div class="tab-item tab-item-fixed">
+
+  <div class="tab-item tab-item-fixed" (click)="openModal()">
     <span class="icon icon-plus"></span>
+  </div>
+</div>
+
+<div #model id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <form>
+      <div class="form-group">
+        <label>Add Tab</label>
+        <input type="text" class="form-control" name="tab_name" placeholder="Enter Tab Name" [(ngModel)]="tabname">
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-form btn-default" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-form btn-primary"  (click)="addTab()">OK</button>
+      </div>
+    </form>
   </div>
 </div>

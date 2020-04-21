@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  bottomtabs_index = 3;
 
   constructor() { }
+
+  public selectIndex(index: any):void {
+    this.bottomtabs_index = index;
+  }
 
   ngOnInit(): void { }
 

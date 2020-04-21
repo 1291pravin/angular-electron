@@ -1,3 +1,4 @@
+import { DummyComponent } from './../dummy/dummy.component';
 import { FooterComponent } from './../footer/footer.component';
 import { TradetabsComponent } from './../tradetabs/tradetabs.component';
 import { HeaderComponent } from './../header/header.component';
@@ -15,7 +16,7 @@ import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
-  declarations: [HomeComponent,HeaderComponent,TradetabsComponent,FooterComponent],
+  declarations: [HomeComponent,HeaderComponent,TradetabsComponent,FooterComponent,DummyComponent],
   imports: [CommonModule, SharedModule, HomeRoutingModule,ResizableModule, AngularSplitModule.forRoot(),ChartsModule]
 })
 export class HomeModule {}

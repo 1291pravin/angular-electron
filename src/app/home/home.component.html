@@ -1,6 +1,7 @@
 <div class="window">
 <app-header></app-header>
-<div class="window-content" app-tradetabs></div>
-<footer class="toolbar toolbar-footer" app-footer>
+<div class="window-content"  *ngIf="bottomtabs_index == 3" app-tradetabs></div>
+<div class="window-content"  *ngIf="bottomtabs_index !== 3" app-dummy></div>
+<footer class="toolbar toolbar-footer" app-footer (onTabClicked)="selectIndex($event)">
 </footer>
 </div>
